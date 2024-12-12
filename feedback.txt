@@ -1,8 +1,15 @@
-Classes	and Inheritance	: 
-Encapsulation : 
-Polymorphism : 
-Exceptions and Error handling : 
-Organization : 
-Attempt : 
-Flexibility for Future : 
-Alerts :
+Classes	and Inheritance	: Class names should be singular (Drone vs Drones) and interface names should end in -able
+(e.g. Drawable), the position variable should also be included in the superclass. To enable more lions, drones, keepers
+etc. to be added, you should use a function inside the subclasses to get the current position of the object, instead of
+getting the position of specific objects inside your Drawing class. Similar with the draw function. But good use of
+common variables in the superclass - 7
+Encapsulation : The fields of your superclass and subclasses should be private, and accessed with getters and
+setters - 2
+Polymorphism : No polymorphism used - 0
+Exceptions and Error handling : You have caught errors from the LocationSystem API but have handled them by throwing
+ another exception instead of showing an error message - 5
+Organization : Some use of packages - 5
+Attempt : A good attempt, but your code only runs once  - 6
+Flexibility for Future : No use of ArrayLists - 0
+Alerts : Correct distance calculation, but this needs to be updated continuously in a loop instead of just running
+once - 5
