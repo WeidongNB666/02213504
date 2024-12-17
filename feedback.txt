@@ -4,12 +4,16 @@ etc. to be added, you should use a function inside the subclasses to get the cur
 getting the position of specific objects inside your Drawing class. Similar with the draw function. But good use of
 common variables in the superclass - 7
 Encapsulation : The fields of your superclass and subclasses should be private, and accessed with getters and
-setters - 2
+setters. Access to fields should be restricted to the minimum necessary, due to the risk that external code might not
+understand how those fields are used internally, potentially leading to them going outside a valid range. Give them
+'private' visibility and access them from getters and setters. If they are in a superclass and need access from the
+subclass, make them 'protected'. - 2
 Polymorphism : No polymorphism used - 0
-Exceptions and Error handling : You have caught errors from the LocationSystem API but have handled them by throwing
- another exception instead of showing an error message - 5
+Exceptions and Error handling : You have caught errors from the LocationSystem API but should have handled them
+gracefully by displaying a relevant error message - 5
 Organization : Some use of packages - 5
 Attempt : A good attempt, but your code only runs once  - 6
-Flexibility for Future : No use of ArrayLists - 0
+Flexibility for Future : No use of ArrayLists. The test asked for the design to be flexible for the future - the objects
+should therefore be added to an ArrayList, so that more objects can be easily added to it in the future. - 0
 Alerts : Correct distance calculation, but this needs to be updated continuously in a loop instead of just running
 once - 5
